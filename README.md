@@ -2,9 +2,8 @@
 
 
 使用 GitHub Actions 自動做佈署，將程式push到遠端的 main 分支，就會自動執行 YML的腳本
-```
-npm run build > 產生 dist 資料夾 > 放到 gh-pages 分支 > 瀏覽page
-```
+> npm run build > 產生 dist 資料夾 > 放到 gh-pages 分支 > 瀏覽page
+
 
 ## 環境
 - node 20
@@ -13,6 +12,7 @@ npm run build > 產生 dist 資料夾 > 放到 gh-pages 分支 > 瀏覽page
 
 ## 建立一個新專案
 npm create vue@latest
+
 記得要加入route
 
 ## 加入gitHub Page路由設定
@@ -29,7 +29,9 @@ export default defineConfig({
 
 ## 設定 Workflows 權限
 上方選單：點擊settings
+
 左側選取：Action > General
+
 右側內容：Workflow permissions，選擇Read and write premissions
 
 ## 製作YML
@@ -104,6 +106,4 @@ jobs:
 右側內容：Build and deployment > source，選取Deploy from sa branch
 
 Branch：選取gh-pages (透過自動佈署後產生的分支)
-```
-自動生成的 dist 資料夾內容，會被部署到 gh-pages 這個分支內
-```
+> 自動生成的 dist 資料夾內容，會被部署到 gh-pages 這個分支內
