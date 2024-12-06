@@ -98,8 +98,11 @@ jobs:
 
 ## 設定 GitHub Pages
 上方選單：點擊settings
+
 左側選取：pages
+
 右側內容：Build and deployment > source，選取Deploy from sa branch
+
 Branch：選取gh-pages (透過自動佈署後產生的分支)
 ```
 自動生成的 dist 資料夾內容，會被部署到 gh-pages 這個分支內
